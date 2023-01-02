@@ -1,0 +1,12 @@
+.link {
+  padding-bottom: 20px;
+}
+
+.linkitem{
+  display: flex;
+  justify-content: space-between;
+}
+
+.linkMenu{
+  color: black;
+}
