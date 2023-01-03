@@ -1,33 +1,49 @@
 import * as React from "react";
 import { motion } from "framer-motion";
 import { mix } from "popmotion";
+import './ContentPlaceholder.css'
 
-const randomInt = (min, max) => Math.round(mix(min, max, Math.random()));
-const generateParagraphLength = () => randomInt(5, 20);
-const generateWordLength = () => randomInt(20, 100);
+export const Word = ({ link }) => <div className="word">{link}</div>
 
-const paragraphs = [...Array(3)].map(() => {
-  return [...Array(generateParagraphLength())].map(generateWordLength);
-});
-
-export const Word = ({ width }) => <div className="word" style={{ width }} />;
-
-const Paragraph = ({ words }) => (
+const Paragraph = ({ 
+    link1,
+    link2,
+    link3,
+    link4,
+    link5,
+    link6
+ }) => (
   <div className="paragraph">
-    {words.map(width => (
-      <Word width={width} />
-    ))}
+    <Word link={link1}/>
+    <Word link={link2}/>
+    <Word link={link3}/>
+    <Word link={link4}/>
+    <Word link={link5}/>
+    <Word link={link6}/>
   </div>
 );
 
-export const ContentPlaceholder = () => (
+export const ContentPlaceholder = ({
+    link1,
+    link2,
+    link3,
+    link4,
+    link5,
+    link6
+}) => (
   <motion.div
     variants={{ collapsed: { scale: 0.8 }, open: { scale: 1 } }}
     transition={{ duration: 0.8 }}
     className="content-placeholder"
   >
-    {paragraphs.map(words => (
-      <Paragraph words={words} />
-    ))}
+      <Paragraph  
+      link1={link1}
+      link2={link2}
+      link3={link3}
+      link4={link4}
+      link5={link5}
+      link6={link6}
+      />
+   
   </motion.div>
 );
