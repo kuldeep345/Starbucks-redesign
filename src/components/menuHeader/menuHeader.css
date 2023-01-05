@@ -1,0 +1,42 @@
+.menuHeader{
+    background-color: #f7f7f7;
+    border: 1px solid #edebe9;
+    width: 100%;
+    padding-left: 131px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dbd9d7;
+    z-index: 2;
+    position: fixed
+}
+
+.menuHeader_links{
+    display: flex;
+    gap: 25px;
+}
+
+.menuHeader_links > a {
+    color: rgba(26, 26, 26, 0.87);
+    font-weight: 600;
+    font-size: 15px;
+    padding-bottom: 5px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.menuHeader_link--active{
+    border-bottom: 1.8px solid rgb(57, 57, 57);
+}
+
+@media (max-width:768px){
+    .menuHeader{
+        position: inherit;
+        padding-left: 50px;
+    }
+}
+
+@media (max-width:425px) {
+    .menuHeader{
+        display: none;
+    }
+}

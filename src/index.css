@@ -22,7 +22,8 @@ nav {
   top: 0;
   right: 0;
   bottom: 0;
-  width: 400px;
+  height: 100vh;
+  width: 375px;
   display: none;
   overflow: hidden;
   z-index: 999;
@@ -70,10 +71,10 @@ ul {
   padding: 0px 25px;
   position: absolute;
   top: 100px;
-  left: 0px;
+  left: 12px;
   display: flex;
   flex-direction: column;
-  width: 350px;
+  width: 317px;
 }
 
 li {

@@ -1,0 +1,79 @@
+.signupScreen {
+    display: grid;
+    place-items: center;
+    gap: 40px;
+  }
+  
+  .signupScreen_header {
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.06),
+      0 0 2px rgba(0, 0, 0, 0.07);
+    width: 100%;
+    height: 101px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .signupScreen_header > a > img {
+    object-fit: contain;
+    height: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  
+  .signupScreen_heading {
+    color: rgba(0, 0, 0, 0.87);
+    font-weight: 800;
+    font-size: 28px;
+  }
+  
+  .signupScreen_rewards {
+    text-align: center;
+  }
+  
+  .signupScreen_rewards > h4 {
+    color: rgba(0, 0, 0, 0.56);
+    letter-spacing: 1.4px;
+    font-weight: 800;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .signupScreen_rewards > p {
+    color: rgba(0, 0, 0, 0.56);
+    line-height: 1.5;
+    max-width: 500px;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  
+  .signupScreen_rewards > p > a {
+    color: rgba(0, 0, 0, 0.56);
+    text-decoration: underline;
+  }
+  
+  .signupScreen_rewards > p > a:hover {
+    text-decoration: none;
+  }
+  
+  @media (max-width: 425px) {
+    .signupScreen {
+      gap: 30px;
+    }
+    .signupScreen_heading {
+      margin-right: auto;
+      padding: 0 20px;
+      font-size: 24px;
+    }
+  
+    .signupScreen_rewards > h4 {
+      display: none;
+    }
+    .signupScreen_rewards {
+      text-align: left;
+      padding: 0 20px;
+    }
+    .signupScreen_rewards > p {
+      font-size: 13px;
+    }
+  }
