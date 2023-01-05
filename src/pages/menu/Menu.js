@@ -10,7 +10,7 @@ const Menu = () => {
   return (
     <>
     <div className='headers'>
-    <Header/>
+    <Header />
     <MenuHeader/>
     </div>
      <div className='menuScreen'>

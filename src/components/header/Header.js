@@ -9,7 +9,7 @@ import LogoutButton from '../logoutButton/LogoutButton'
 import './header.css'
 
 const Header = ({menuPage}) => {
-
+  
   const user = useSelector(state => state.user.user)
 
   return (
@@ -40,7 +40,7 @@ const Header = ({menuPage}) => {
           </>
         ): (
             <div className='header_logout'>
-                {menuPage ? <LogoutButton/> : <Link to="/">Order Now</Link>}
+                {user ? <LogoutButton/> : <Link to="/">Order Now</Link>}
             </div>
         )}
       </div>  
