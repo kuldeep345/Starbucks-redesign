@@ -8,7 +8,7 @@ const SignUp = () => {
   return (
     <div className='signupScreen'>
         <div className='signupScreen_header'>
-            <Link>
+            <Link to="/">
                 <img 
                 src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/1200px-Starbucks_Corporation_Logo_2011.svg.png"
                 alt=''

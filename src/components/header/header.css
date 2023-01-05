@@ -26,6 +26,8 @@
 .header_logo > img {
     object-fit: contain;
     height: 50px;
+    z-index: 99999;
+    position: inherit;
 }
 
 .header_left{

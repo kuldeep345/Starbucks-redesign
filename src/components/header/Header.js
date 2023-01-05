@@ -19,7 +19,7 @@ const Header = ({menuPage}) => {
           <img src='https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/1200px-Starbucks_Corporation_Logo_2011.svg.png' alt="" />
         </Link>
    
-        <Link to='/' className='header_link'>
+        <Link to='/menu' className='header_link'>
           Menu
         </Link>
         <Link className='header_link'>Rewards</Link>

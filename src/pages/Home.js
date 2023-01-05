@@ -91,6 +91,7 @@ const Home = () => {
         </div>
       </Fade>
       <Example/>
+ 
       </div>
     </div>
   )
